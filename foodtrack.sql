@@ -25,8 +25,8 @@ CREATE TABLE Producto (
     categoria VARCHAR(50),
     precio DECIMAL(5,2) NOT NULL,
     ingredientes TEXT,
-    id_lugar INT,
-    FOREIGN KEY (id_lugar) REFERENCES Lugar(id)
+    id_forgoneta INT,
+    FOREIGN KEY (id_forgoneta) REFERENCES Forgoneta(id)
 );
 CREATE TABLE Pedido (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -34,7 +34,7 @@ CREATE TABLE Pedido (
     deporte VARCHAR(50),
     tipo_pago VARCHAR(50),
     fecha_hora DATETIME NOT NULL,
-    id_lugar INT,
+    id_forgoneta INT,
     observaciones TEXT,
-    FOREIGN KEY (id_lugar) REFERENCES Lugar(id)
+    FOREIGN KEY (id_forgoneta) REFERENCES Forgoneta(id)
 );
