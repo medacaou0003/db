@@ -38,3 +38,8 @@ CREATE TABLE Pedido (
     observaciones TEXT,
     FOREIGN KEY (id_forgoneta) REFERENCES Forgoneta(id)
 );
+
+
+ALTER TABLE Empleado
+ADD COLUMN id_forgoneta INT,
+ADD FOREIGN KEY (id_forgoneta) REFERENCES Forgoneta(id);
