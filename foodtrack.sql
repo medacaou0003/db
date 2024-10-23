@@ -22,7 +22,7 @@ CREATE TABLE Empleado (
     dni VARCHAR(20) UNIQUE,               -- DNI único para cada empleado
     telefono VARCHAR(20),                  -- Número de teléfono
     email VARCHAR(100),                   -- Dirección de correo electrónico
-    salario DECIMAL(7,2)                  -- Salario del empleado
+    salario DECIMAL(7,2)                  -- Salario del empleado.
 );
 
 -- Creación de la tabla 'Producto' para almacenar información de los productos
